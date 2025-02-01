@@ -1,0 +1,16 @@
+/*
+Theme Name: Save Cinerama
+Theme URI: https://github.com/richardvanthof/save-cinerama-wp-theme
+Template: hello-elementor
+Author: Richard van 't Hof
+Author URI: therichard.space
+Description: Theme with custom modifications for the 'Save Cinerama' campaign website based on 'Hello Elementor.'
+Tags: Cinerama, campaign
+Version: 0.0.1.1738450443
+Updated: 2025-02-01 22:54:03
+
+*/
+
+body, html {
+    background-color: red !important;
+}

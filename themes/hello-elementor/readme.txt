@@ -1,8 +1,3 @@
-# Save cinerama starter child theme
-
-## changes
-- added cinema graphic element
-
 === Hello Elementor ===
 
 Contributors: elemntor, KingYes, ariel.k, bainternet

@@ -1,7 +1,7 @@
 {
     "themes": [
-        "./themes/hello-elementor.zip",
-        "./themes/cinerama-elementor"
+        "./themes/hello-elementor",
+        "./themes/save-cinerama"
     ],
     "config": {
         "WP_DEBUG": true,
