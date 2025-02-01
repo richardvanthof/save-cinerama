@@ -1,0 +1,10 @@
+{
+    "themes": [
+        "./themes/hello-elementor.zip",
+        "./themes/cinerama-elementor"
+    ],
+    "config": {
+        "WP_DEBUG": true,
+        "SCRIPT_DEBUG": true
+    }
+}

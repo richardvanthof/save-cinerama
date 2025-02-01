@@ -1,0 +1,71 @@
+@import url('normalize.css');
+@import url('variables.css');
+@import url('colors-desktop.css');
+@import url('colors-mobile.css');
+
+@keyframes colorChange {
+    0% { fill: #000; }
+    50% { fill: #3D29FD; }
+    100% { fill: #000; }
+}
+
+.cinerama-outer > * {
+    animation: colorChange 5s infinite;
+    animation-timing-function: step-start;
+}
+
+#desktop, #mobile {
+    display: none;
+}
+
+
+
+.cta-link {
+    background: white;
+    border: 3px solid black;
+}
+
+.links {
+    background: white;
+}
+
+@media screen and (max-width: 1200px) {
+    #mobile {
+        display: block;
+    }
+
+    .links {
+        display: block;
+        position: absolute;
+        width: 80vw;
+        top: 45vh;
+        left: 10vw;
+    }
+
+    .cta-link {
+        display: block;
+        font-size: clamp(1rem, 6vw, 4rem);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #desktop {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        min-height: 75rem;
+    }
+
+    /* .links {
+        display: flex;
+        width: 31vw;
+        top: 40vh;
+        height: 12vh;
+        transform: translateX(0em);
+        background: white;
+        border: none;
+        position: absolute;
+    } */
+}
+
+

@@ -1,0 +1,12 @@
+{
+  "name": "save-cinerama",
+  "packageManager": "yarn@4.5.2",
+  "devDependencies": {
+    "@wordpress/env": "^10.17.0"
+  },
+  "scripts": {
+    "start": "wp-env start",
+    "stop": "wp-env stop",
+    "wp:scaffold": "wp-env scaffold plugin"
+  }
+}
