@@ -6,5 +6,9 @@
     "config": {
         "WP_DEBUG": true,
         "SCRIPT_DEBUG": true
+    },
+    "mappings": {
+        "wp-content/themes/save-cinerama": "./themes/save-cinerama",
+        "wp-content/themes/hello-elementor": "./themes/hello-elementor"
     }
 }
