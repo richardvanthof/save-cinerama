@@ -8,5 +8,8 @@
     "start": "wp-env start",
     "stop": "wp-env stop",
     "wp:scaffold": "wp-env scaffold plugin"
+  },
+  "dependencies": {
+    "@wordpress/scripts": "^30.10.0"
   }
 }
