@@ -12,6 +12,6 @@ Modified version of Elementor with some assets specific to the 'Save Cinerama' c
 3. Start the WP dev environment using `yarn start --update`
 
 ## Commands
-`yarn start` - start Wordpress environment
-`yarn start --update` - rebuild wordpress using the latest config from .wp-env.json
-`yarn stop` - stop WP dev server.
+- `yarn start` - start Wordpress environment
+- `yarn start --update` - rebuild wordpress using the latest config from .wp-env.json
+- `yarn stop` - stop WP dev server.
