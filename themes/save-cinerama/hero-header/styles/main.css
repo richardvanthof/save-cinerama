@@ -53,18 +53,6 @@
         display: flex;
         height: 100vh;
         justify-content: center;
-        min-height: 75rem;
     }
-
-    /* .links {
-        display: flex;
-        width: 31vw;
-        top: 40vh;
-        height: 12vh;
-        transform: translateX(0em);
-        background: white;
-        border: none;
-        position: absolute;
-    } */
 }
 
