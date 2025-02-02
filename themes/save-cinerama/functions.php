@@ -1,4 +1,7 @@
 <?php
+// Include the hero-header.php file before anything else
+include get_stylesheet_directory() . '/hero-header/hero-header.php';
+
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 function my_theme_enqueue_styles() {
     $parenthandle = 'hello-elementor'; // This is 'twenty-twenty-one-style' for the Twenty Twenty-one theme.
@@ -33,9 +36,5 @@ function chld_thm_cfg_add_parent_dep() {
 endif;
 add_action( 'wp_head', 'chld_thm_cfg_add_parent_dep', 2 );
 
-// function cinema_hero_section() {
-//     return 'hello world'
-// }
-
-// add_shortcode('cinema_header', 'cinema_hero_section');
 // END ENQUEUE PARENT ACTION
+?>
