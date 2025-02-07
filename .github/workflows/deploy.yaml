@@ -1,4 +1,4 @@
-name: Deploy Application
+name: Deploy to host
 
 on:
   push:
@@ -8,16 +8,19 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v3
-    - name: rsync deployments
-      uses: burnett01/rsync-deployments@7.0.2
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy files via rsync
+      uses: D3rHase/rsync-deploy-action@latest
       with:
-        switches: -avzr --delete
-        path: themes/*
-        remote_path: ${{ vars.DEPLOY_FOLDER }}
-        remote_host: ${{ secrets.SERVER_DOMAIN }}
-        remote_port: ${{ secrets.SERVER_SSH_PORT }}
-        remote_user: ${{ secrets.SERVER_USER }}
-        remote_key: ${{ secrets.SERVER_SSH_KEY }}
-        remote_key_pass: ${{ secrets.SERVER_SSH_PASSPHRASE }}
+        HOST: ${{ secrets.SERVER_HOST }}
+        USER: ${{ secrets.SERVER_USER }}
+        PRIVATE_SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
+        REPOSITORY_PATH: 'themes/*'
+        SERVER_PATH: ${{ vars.DEPLOY_FOLDER }}
+
+    - name: Notify Deployment Success
+      run: echo "Deployment to ${{ secrets.HOST }} completed successfully!"
