@@ -20,4 +20,4 @@ jobs:
         USER: ${{ secrets.SERVER_USER }}
         PRIVATE_SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
         REPOSITORY_PATH: 'themes/*'
-        SERVER_PATH: '~/tmp/'
+        SERVER_PATH: '/mnt/web108/a3/64/570403864/htdocs/tmp/'
