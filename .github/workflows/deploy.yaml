@@ -5,7 +5,7 @@ on:
   
 jobs:
   run_pull:
-    name: run pull
+    name: Deploy to webhost
     runs-on: ubuntu-latest
     
     steps:
@@ -19,9 +19,6 @@ jobs:
         install -m 600 -D /dev/null ~/.ssh/id_rsa
         echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/id_rsa
         ssh-keyscan -H ${{ secrets.SERVER_HOST }} > ~/.ssh/known_hosts
-
-    - name: List workspace contents
-      run: ls -R $GITHUB_WORKSPACE
 
     - name: connect and deploy to host
       run: rsync -avz --delete themes/* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{secrets.SERVER_DIST_FOLDER}}
