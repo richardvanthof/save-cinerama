@@ -17,6 +17,6 @@ jobs:
         echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/id_rsa
         ssh-keyscan -H ${{ secrets.SERVER_HOST }} > ~/.ssh/known_hosts
     - name: connect and pull
-      run: rsync -avz --delete $GITHUB_WORKSPACEthemes/* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{secrets.SERVER_DIST_FOLDER}}
+      run: rsync -avz --delete $GITHUB_WORKSPACE/themes/* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{secrets.SERVER_DIST_FOLDER}}
     - name: cleanup
       run: rm -rf ~/.ssh
