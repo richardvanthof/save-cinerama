@@ -12,12 +12,12 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-
-    - name: Deploy files via rsync
-      uses: D3rHase/rsync-deploy-action@latest
+    
+    - name: Install SSH Key
+      uses: shimataro/ssh-key-action@v2
       with:
-        HOST: ${{ secrets.SERVER_HOST }}
-        USER: ${{ secrets.SERVER_USER }}
-        PRIVATE_SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
-        REPOSITORY_PATH: 'themes/*'
-        SERVER_PATH: '/mnt/web108/a3/64/570403864/htdocs/tmp/'
+        key: ${{ secrets.SERVER_SSH_KEY }}
+        known_hosts: ${{ secrets.KNOWN_HOSTS }}
+
+    - name: Deploy with rsync
+      run: rsync -avz ./themes/* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{ vars.DEPLOY_FOLDER }}
