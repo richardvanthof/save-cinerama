@@ -31,7 +31,6 @@
 
 .cinema-graphic-desktop {
     min-width: 115rem !important;
-    background: red;
 }
 
 @media screen and (max-width: 1200px) {
