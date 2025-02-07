@@ -20,7 +20,4 @@ jobs:
         USER: ${{ secrets.SERVER_USER }}
         PRIVATE_SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
         REPOSITORY_PATH: 'themes/*'
-        SERVER_PATH: ${{ vars.DEPLOY_FOLDER }}
-
-    - name: Notify Deployment Success
-      run: echo "Deployment to ${{ secrets.HOST }} completed successfully!"
+        SERVER_PATH: '~/tmp/'
