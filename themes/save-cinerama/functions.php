@@ -1,5 +1,11 @@
 <?php
 // Include the hero-header.php file before anything else
+
+include_once get_stylesheet_directory() . '/mention-post-type/mention-post-type.php';
+
+
+
+
 include get_stylesheet_directory() . '/hero-header/hero-header.php';
 
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
