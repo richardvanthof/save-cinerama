@@ -1,357 +1,445 @@
 #desktop {
     .cls-1 {
-        fill: none;
-    }
-
-    .cls-2 {
-        fill: #2f2f2c;
-    }
-
-    .cls-3 {
         fill: #070707;
     }
 
-    .cls-4 {
-        fill: #b0ac9b;
-    }
-
-    .cls-5 {
+    .cls-2 {
         fill: #fdf7e4;
     }
 
-    .cls-6 {
+    .cls-3 {
         fill: #3d29fd;
     }
 
-    .cls-7 {
-        fill: #050505;
-    }
-
-    .cls-8 {
-        fill: #f7e24d;
-    }
-
-    .cls-9 {
-        fill: #d1dbeb;
-    }
-
-    .cls-10 {
-        fill: #0b0a08;
-    }
-
-    .cls-11 {
-        fill: #060604;
-    }
-
-    .cls-12 {
-        fill: #f9e44d;
-    }
-
-    .cls-13 {
-        fill: #f7f3e8;
-    }
-
-    .cls-14 {
-        fill: #d0daea;
-    }
-
-    .cls-15 {
-        fill: #545454;
-    }
-
-    .cls-16 {
-        fill: #060605;
-    }
-
-    .cls-17 {
-        fill: #d0eefc;
-    }
-
-    .cls-18 {
-        fill: #090806;
-    }
-
-    .cls-19 {
-        fill: #d7cfb5;
-    }
-
-    .cls-20 {
-        fill: #030303;
-    }
-
-    .cls-21 {
-        fill: #faf4e2;
-    }
-
-    .cls-22 {
-        fill: #b2ae9d;
-    }
-
-    .cls-23 {
-        fill: #fc5229;
-    }
-
-    .cls-24 {
-        fill: #fcf6e3;
-    }
-
-    .cls-25 {
-        fill: #080806;
-    }
-
-    .cls-26 {
-        fill: #f7e14d;
-    }
-
-    .cls-27 {
-        fill: #3d28fd;
-    }
-
-    .cls-28 {
-        fill: #f9522c;
-    }
-
-    .cls-29 {
-        fill: #060706;
-    }
-
-    .cls-30 {
-        fill: #d1effc;
-    }
-
-    .cls-31 {
+    .cls-4, .cls-5, .cls-6 {
         fill: #38984b;
     }
 
+    .cls-4, .cls-5, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12 {
+        stroke-miterlimit: 10;
+    }
+
+    .cls-4, .cls-5, .cls-13, .cls-14, .cls-15, .cls-16, .cls-10, .cls-11, .cls-12 {
+        stroke: #000;
+    }
+
+    .cls-4, .cls-13, .cls-16, .cls-12 {
+        stroke-width: 5px;
+    }
+
+    .cls-17 {
+        fill: #1f7766;
+    }
+
+    .cls-18 {
+        fill: #050505;
+    }
+
+    .cls-19 {
+        fill: #f7e24d;
+    }
+
+    .cls-5, .cls-14, .cls-15, .cls-10, .cls-11 {
+        stroke-width: 4px;
+    }
+
+    .cls-20, .cls-11, .cls-12 {
+        fill: #d1dbeb;
+    }
+
+    .cls-21 {
+        fill: #0b0a08;
+    }
+
+    .cls-22 {
+        fill: #060604;
+    }
+
+    .cls-23 {
+        fill: #f9e44d;
+    }
+
+    .cls-24 {
+        fill: #d0daea;
+    }
+
+    .cls-25 {
+        fill: #060605;
+    }
+
+    .cls-26 {
+        fill: #d0eefc;
+    }
+
+    .cls-27 {
+        fill: #090806;
+    }
+
+    .cls-28 {
+        fill: #d7cfb5;
+    }
+
+    .cls-29 {
+        fill: #030303;
+    }
+
+    .cls-30 {
+        fill: #faf4e2;
+    }
+
+    .cls-31 {
+        fill: #b2ae9d;
+    }
+
     .cls-32 {
-        fill: #fb522a;
+        fill: #ededd6;
     }
 
     .cls-33 {
-        fill: #b1ad9c;
+        fill: #fc5229;
     }
 
     .cls-34 {
-        fill: #c0b69c;
+        fill: #fcf6e3;
     }
 
     .cls-35 {
-        fill: #9b9fa1;
+        fill: #080806;
     }
 
     .cls-36 {
-        fill: #efda4b;
+        fill: #f7e14d;
     }
 
     .cls-37 {
-        fill: #fc522a;
+        fill: #c8dfe8;
     }
 
     .cls-38 {
-        fill: #3e29fc;
+        fill: #3d28fd;
     }
 
     .cls-39 {
-        fill: #0a0a07;
+        fill: #f9522c;
     }
 
     .cls-40 {
-        fill: #cfecfa;
+        fill: #9facbc;
     }
 
     .cls-41 {
-        fill: #2f2f2d;
+        fill: #060706;
     }
 
     .cls-42 {
-        fill: #060606;
+        fill: #d1effc;
     }
 
     .cls-43 {
-        fill: #37974b;
+        fill: #fb522a;
     }
 
     .cls-44 {
-        fill: #464646;
+        fill: #c0b69c;
     }
 
     .cls-45 {
-        fill: #070605;
+        fill: #efda4b;
     }
 
     .cls-46 {
-        fill: #efda4a;
+        fill: #fc522a;
     }
 
     .cls-47 {
-        fill: #f8e34d;
+        fill: #3e29fc;
     }
 
     .cls-48 {
-        fill: #040403;
+        fill: #0a0a07;
     }
 
     .cls-49 {
-        fill: #f9f9f9;
+        fill: #cfecfa;
+    }
+
+    .cls-7 {
+        fill: #fff;
+        stroke: #aebdd3;
+        stroke-width: .5px;
     }
 
     .cls-50 {
-        fill: #d1eefc;
+        fill: #060606;
     }
 
-    .cls-51 {
-        fill: #d2f0fe;
+    .cls-8 {
+        stroke-width: .25px;
     }
 
-    .cls-52 {
+    .cls-8, .cls-9 {
+        stroke: #040404;
+    }
+
+    .cls-8, .cls-51 {
         fill: #040404;
     }
 
+    .cls-52 {
+        fill: #37974b;
+    }
+
+    .cls-9 {
+        stroke-width: 9px;
+    }
+
+    .cls-9, .cls-13, .cls-14, .cls-10 {
+        fill: none;
+    }
+
     .cls-53 {
-        fill: #f6e14e;
+        fill: #464646;
     }
 
     .cls-54 {
-        fill: #f6e14c;
+        fill: #070605;
     }
 
     .cls-55 {
-        fill: #fafafa;
+        fill: #efda4a;
+    }
+
+    .cls-13, .cls-14 {
+        stroke-linejoin: bevel;
     }
 
     .cls-56 {
-        fill: #080808;
+        fill: #f8e34d;
     }
 
     .cls-57 {
-        fill: #d8d0b6;
+        fill: #040403;
     }
 
     .cls-58 {
-        fill: #f3de4b;
+        fill: #f9f9f9;
     }
 
     .cls-59 {
-        fill: #faf5e8;
+        fill: #d1eefc;
     }
 
     .cls-60 {
-        fill: #faf4e1;
+        fill: #d2f0fe;
     }
 
     .cls-61 {
-        fill: #fdf9e7;
+        fill: #f6e14e;
     }
 
     .cls-62 {
-        fill: #f1dc4b;
+        fill: #f6e14c;
     }
 
     .cls-63 {
-        fill: #d7cfb6;
+        fill: #fafafa;
     }
 
     .cls-64 {
-        fill: #3e28fa;
+        fill: #080808;
     }
 
-    .cls-65 {
-        fill: #0a0907;
+    .cls-65, .cls-15, .cls-16 {
+        fill: #d8d0b6;
     }
 
     .cls-66 {
-        fill: #b5bdcc;
+        fill: #f3de4b;
     }
 
     .cls-67 {
-        fill: #f3de4c;
+        fill: #f1dc4b;
     }
 
     .cls-68 {
-        fill: #fbfbfb;
+        font-variation-settings: 'wght' 552, 'ital' 0;
+        font-weight: 500;
     }
 
     .cls-69 {
-        fill: #fcfcfc;
+        fill: #d7cfb6;
     }
 
     .cls-70 {
-        fill: #fef8e5;
+        fill: #3e28fa;
     }
 
     .cls-71 {
-        fill: #f7f1df;
+        fill: #0a0907;
     }
 
     .cls-72 {
-        fill: #090907;
+        letter-spacing: -.07em;
     }
 
     .cls-73 {
-        fill: #d0edfb;
+        fill: #f3de4c;
     }
 
     .cls-74 {
-        fill: #d1effd;
+        fill: #fbfbfb;
     }
 
     .cls-75 {
-        fill: #050605;
+        letter-spacing: -.02em;
     }
 
     .cls-76 {
-        fill: #070705;
+        letter-spacing: -.02em;
     }
 
     .cls-77 {
-        fill: #f6e04c;
+        letter-spacing: -.02em;
     }
 
     .cls-78 {
-        fill: #0b0b08;
+        letter-spacing: -.02em;
     }
 
     .cls-79 {
-        fill: #0a0a08;
+        letter-spacing: -.02em;
     }
 
     .cls-80 {
-        fill: #f5e04d;
+        letter-spacing: -.02em;
     }
 
     .cls-81 {
-        clip-path: url(#clippath);
+        letter-spacing: -.02em;
     }
 
     .cls-82 {
-        fill: #4029fa;
+        letter-spacing: -.02em;
     }
 
     .cls-83 {
-        fill: #d6cfb5;
+        letter-spacing: -.02em;
     }
 
     .cls-84 {
-        fill: #30302d;
+        letter-spacing: -.01em;
     }
 
     .cls-85 {
-        fill: #faf5e2;
+        letter-spacing: -.02em;
     }
 
     .cls-86 {
-        fill: #f5e04c;
+        fill: #fef8e5;
     }
 
     .cls-87 {
-        fill: #37984b;
+        letter-spacing: -.02em;
     }
 
     .cls-88 {
-        fill: #fdfdfd;
+        letter-spacing: -.01em;
     }
 
     .cls-89 {
+        letter-spacing: -.02em;
+    }
+
+    .cls-90 {
+        letter-spacing: -.02em;
+    }
+
+    .cls-91 {
+        fill: #090907;
+    }
+
+    .cls-92 {
+        letter-spacing: -.05em;
+    }
+
+    .cls-93 {
+        letter-spacing: -.03em;
+    }
+
+    .cls-94 {
+        letter-spacing: -.03em;
+    }
+
+    .cls-95 {
+        letter-spacing: 0em;
+    }
+
+    .cls-96 {
+        fill: #d0edfb;
+    }
+
+    .cls-97 {
+        fill: #d1effd;
+    }
+
+    .cls-98 {
+        letter-spacing: 0em;
+    }
+
+    .cls-99 {
+        letter-spacing: -.01em;
+    }
+
+    .cls-100 {
+        fill: #050605;
+    }
+
+    .cls-101 {
+        fill: #070705;
+    }
+
+    .cls-102 {
+        fill: #f6e04c;
+    }
+
+    .cls-103 {
+        letter-spacing: 0em;
+    }
+
+    .cls-104 {
+        fill: #0b0b08;
+    }
+
+    .cls-15, .cls-16 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .cls-105 {
+        fill: #0a0a08;
+    }
+
+    .cls-106 {
+        fill: #f5e04d;
+    }
+
+    .cls-107 {
+        fill: #4029fa;
+    }
+
+    .cls-108 {
+        fill: #0e5648;
+    }
+
+    .cls-109 {
+        fill: #faf5e2;
+    }
+
+    .cls-110 {
+        fill: #f5e04c;
+    }
+
+    .cls-111 {
         fill: #1f9682;
-    } 
+    }
 }

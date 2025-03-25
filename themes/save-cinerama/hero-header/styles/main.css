@@ -14,12 +14,6 @@
     animation-timing-function: step-start;
 }
 
-#desktop, #mobile {
-    display: none;
-}
-
-
-
 .cta-link {
     background: white;
     border: 3px solid black;
@@ -29,8 +23,18 @@
     background: white;
 }
 
+.header_description-line {
+    font-size: 2rem !important;
+}
+
 .cinema-graphic-desktop {
     min-width: 115rem !important;
+}
+
+#desktop {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -53,11 +57,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-    #desktop {
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-    }
+    
 
    
 }
