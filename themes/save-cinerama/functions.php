@@ -16,6 +16,21 @@ function my_theme_enqueue_styles() {
     );
 }
 
+// function enqueue_hero_header_scripts() {
+//     // Register the script
+//     wp_register_script(
+//         'animate-letters', // Handle
+//         get_stylesheet_directory_uri() . '/hero-header/scripts/animateLetters.js', // Path to the script
+//         [], // Dependencies (none in this case)
+//         null, // Version (optional)
+//         false // Load in the footer
+//     );
+
+//     // Enqueue the script
+//     wp_enqueue_script('animate-letters');
+// }
+// add_action('wp_enqueue_scripts', 'enqueue_hero_header_scripts');
+
 // BEGIN ENQUEUE PARENT ACTION
 // AUTO GENERATED - Do not modify or remove comment markers above or below:
 
