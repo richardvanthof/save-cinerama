@@ -5,7 +5,10 @@ function hero_header($atts = array(), $content = null, $tag = '' ) {
     $bodyContent = ''; // Initialize $bodyContent
 
     // Check if $content is a string and split it into lines
-    $lines = is_string($content) ? explode("<br/>", $content) : [];
+    // Split on <br>, <br/>, or </br> (case-insensitive)
+    $lines = is_string($content)
+        ? preg_split('/<br\s*\/?>|<\/br>/i', $content)
+        : [];
 
     // Split each line into chunks of 30 characters
     $lines = array_map(function ($string) {
@@ -17,7 +20,7 @@ function hero_header($atts = array(), $content = null, $tag = '' ) {
 
     // Generate the SVG <tspan> elements
     foreach ($flattenedLines as $line) {
-        $bodyContent .= '<tspan class="header_description-line" x="0" dy="39">' . htmlspecialchars($line, ENT_QUOTES, 'UTF-8') . '</tspan>';
+        $bodyContent .= '<tspan class="header_description-line" x="863" dy="39" text-transform="uppercase">' . htmlspecialchars($line, ENT_QUOTES, 'UTF-8') . '</tspan>';
     }
 
     $subtitle = (get_locale() == 'nl_NL') ? (<<<HTML
@@ -239,14 +242,17 @@ function hero_header($atts = array(), $content = null, $tag = '' ) {
         <path class="cls-10" d="M1138.59,599.87s-15.69-.73-177.47-.73c-8.09,0-175.9-.66-183.69-.66s-69.1,1.58-76.5,1.59c-42.56.82-71-3.04-114-.28.99-54.19,3-107.58,2-160.91,42-1.84,84,0,125.6-.79,7.38-.02,19.41-.39,27.18-.39s137.38,0,145.47,0c161.78,0,251.41.36,251.41.36-2.82,85.01,0,97.37-.06,150.18,0,7.43,0,11.87.06,11.64Z"/>
     </g>
     <g id="body" class="layer1">
-        <text 
-        xmlns="http://www.w3.org/2000/svg" 
-        class="cls-68" 
-        transform="translate(863 422)" 
-        font-size="400"
-        style="text-transform: Uppercase; font-family: 'ABC Social Condensed', Helvetica, sans-serif" 
-        dominant-baseline="middle" 
+        <text
+        xmlns="http://www.w3.org/2000/svg"
+        class="cls-68"
+        x="863"
+        y="430"
+        font-size="160"
+        text-transform="uppercase"
+        font-family="'ABC Social Condensed', Helvetica, sans-serif"
+
         text-anchor="middle"
+        xml:space="preserve"
         >
             $bodyContent
         </text>
