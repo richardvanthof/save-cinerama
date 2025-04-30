@@ -20,7 +20,7 @@ function hero_header($atts = array(), $content = null, $tag = '' ) {
 
     // Generate the SVG <tspan> elements
     foreach ($flattenedLines as $line) {
-        $bodyContent .= '<tspan class="header_description-line" x="863" dy="39">' . htmlspecialchars($line, ENT_QUOTES, 'UTF-8') . '</tspan>';
+        $bodyContent .= '<tspan class="header_description-line" x="863" dy="39" text-transform="uppercase">' . htmlspecialchars($line, ENT_QUOTES, 'UTF-8') . '</tspan>';
     }
 
     $subtitle = (get_locale() == 'nl_NL') ? (<<<HTML
