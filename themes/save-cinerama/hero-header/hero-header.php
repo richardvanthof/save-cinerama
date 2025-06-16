@@ -338,7 +338,7 @@ function hero_header($atts = array(), $content = null, $tag = '' ) {
         const centerY = 600; 
         const baseRadius = 100;
         const rx = 750;
-        const ry = 500;
+        const ry = 430;
         const waveAmplitude = 30;
         const waveFrequency = 10;
         const points = 100
