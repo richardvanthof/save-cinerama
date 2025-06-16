@@ -329,7 +329,7 @@ function hero_header($atts = array(), $content = null, $tag = '' ) {
 
         const svgPath = document.getElementById('wavyCircle');
         const centerX = 850;
-        const centerY = 700; 
+        const centerY = 600; 
         const baseRadius = 100;
         const rx = 750;
         const ry = 500;
